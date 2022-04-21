@@ -26,19 +26,19 @@ To setup using conda, you can create a virtual conda environment from a file wit
 
 To create a conda environment from this file locally, in your Terminal run:
 
-`$ conda env create --file environment.yml`
+`conda env create --file environment.yml`
 
 To activate the environment, run:
 
-`$ conda activate shift-env`
+`conda activate shift-env`
 
 If you need to update the environment (i.e. if a new version of a dependency is released), simply update the contents of your `environment.yml` file, then run:
 
-`$ conda env update --prefix ./env --file environment.yml  --prune`
+`conda env update --prefix ./env --file environment.yml  --prune`
 
 To use this environment as a kernel inside Jupyter, you can also manually add it by running:
 
-`$ python -m ipykernel install --user --name <env_name> --display-name "Python (<env_name>)"`
+`python -m ipykernel install --user --name <env_name> --display-name "Python (<env_name>)"`
 
 For more info on using with Jupyter, [see here](https://medium.com/@sachinjose31/install-tensorflow-gpu-and-use-it-using-kernel-in-jupyter-6d82c8c5e468).
 More info about managing conda environments can be found at https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
@@ -48,21 +48,21 @@ If conda is not available or you prefer to use 'pip', you can create a virtual e
 
 To create an environment, in the Terminal run:
 
-`$ python3 -m venv shift-env`
+`python3 -m venv shift-env`
 
 To activate the environment, run:
 
-`$ source shift-env/bin/activate`
+`source shift-env/bin/activate`
 
 You can confirm this is active by running `$ which python`, which should `.../shift-env/bin/python`
 
 Now you can install packages. A file with a list of dependencies needed to run these tutorials has been provided for convenience called `requirements.txt`. To install these, run:
 
-`$ python3 -m pip install -r requirements.txt`
+`python3 -m pip install -r requirements.txt`
 
 If you need to install any additional packages, you can use 
 
-`$ python3 -m pip install <package>`
+`python3 -m pip install <package>`
 
 #### Your environment should now be properly setup. 
 
