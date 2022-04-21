@@ -66,7 +66,7 @@ If you need to install any additional packages, you can use
 
 #### Your environment should now be properly setup. 
 
-######-------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
 
 ## Instructions:
 
@@ -74,18 +74,18 @@ After completing environment setup, launch the Jupyter notebook in a Terminal by
 
 `jupyter notebook`
 
-######-------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
 
 ## STAC Specifics
 The SpatioTemporal Asset Catalog (STAC) specifies a standard language for structuring and querying geospatial data and metadata. The STAC specification is designed around the extensibility & flexibility of JSON, and is comprised of Catalogs, Collections, Items, and the API.
 
-STAC Catalog: JSON object that contains list of STAC Items, or other child STAC Catalogs. Can be further extended to include additional metadata. No restictions for organization; typically uses ‘sub-catalog’ groupings. [More about STAC Catalog Specification](https://github.com/radiantearth/stac-spec/tree/master/catalog-spec)
+**STAC Catalog**: JSON object that contains list of STAC Items, or other child STAC Catalogs. Can be further extended to include additional metadata. No restictions for organization; typically uses ‘sub-catalog’ groupings. [More about STAC Catalog Specification](https://github.com/radiantearth/stac-spec/tree/master/catalog-spec)
 
-STAC Collection: JSON object containing additional info describing the spatial and temporal extents of data; extension of Catalog. Can be further extended to include additional metadata. [More about STAC Collection Specification](https://github.com/radiantearth/stac-spec/blob/master/collection-spec/collection-spec.md)
+**STAC Collection**: JSON object containing additional info describing the spatial and temporal extents of data; extension of Catalog. Can be further extended to include additional metadata. [More about STAC Collection Specification](https://github.com/radiantearth/stac-spec/blob/master/collection-spec/collection-spec.md)
 
-STAC Item: a GeoJSON feature with descriptive attributes that define its time range and assets; a collection of inseparable data & metadata. Represented in a flexible JSON format. Can indlude additonal fields & JSON structures for further customizing data searches. [More about STAC Item Specification](https://github.com/radiantearth/stac-spec/blob/master/item-spec/item-spec.md)
+**STAC Item**: GeoJSON feature with descriptive attributes that define its time range and assets; a collection of inseparable data & metadata. Represented in a flexible JSON format. Can indlude additonal fields & JSON structures for further customizing data searches. [More about STAC Item Specification](https://github.com/radiantearth/stac-spec/blob/master/item-spec/item-spec.md)
 
-The SBG-SHIFT STAC Catalog is grouped into the following hierarchy:
+STAC Catalog hierarchy:
 ```
 SBG-SHIFT STAC Catalog 
 │
@@ -93,7 +93,8 @@ SBG-SHIFT STAC Catalog
 │   │
 │   └─── <flight line> (Item)
 ```
-where <flight line> is a STAC item of date form `YYYYMMDD` (see below). For each of these items, there are assets/datasets of form `angYYYYMMDDtHHNNSS.zarr`, a GeoJSON file of the flight outline, and an RGB composite image. 
+where the STAC item is a dataset for one flight line of date form `YYYYMMDD` (see below). For each of these items, the dataset is an asset of form `angYYYYMMDDtHHNNSS.zarr`, as well as assets for jpegs of RGB True Color, RGB enhanced, and R, G, and B bands plotted separately. Note that the RGB composite images are not yet georeferenced, while bands plotted separately are.
+
 ```  
 YYYY:  The year of the airborne flight run.
 MM:    The month of the airborne flight run (i.e. 05 represents May).
