@@ -5,13 +5,19 @@ Repo for public use for science discovery using data from the Surface Biology an
 
 Files include:
 
--`requirements.txt`: the complete list of required packages
+-`requirements.txt`: the complete list of required packages for Python venv creation
+
+-`environment.yml`: setup file for conda env creation containing the complete list of required packages
+
+-`demo.ipynb`: tutorial Jupyter notebook
+
+-`catalog.json`: copy JSON of the SBG-SHIFT STAC Catalog
 
 ## Download Repo
 
 To download the repo, open Terminal and make sure you are in the desired working directory, then run:
 
-`git clone https://github.com/marinadunn/SHIFT-STAC-demo `
+`git clone https://github.com/marinadunn/SHIFT-STAC-demo`
 
 ## Setup environment:
 
@@ -58,18 +64,13 @@ If you need to install any additional packages, you can use
 
 `$ python3 -m pip install <package>`
 
-#### AWS Credentials Setup
-You will first need to make sure your AWS credentials are properly configured for your user in order to access SHIFT S3 buckets. You can do this by making sure the [AWS CLI](https://aws.amazon.com/cli/) is installed and running the `aws configure` command in your Terminal. You can check to see this works by running `$ aws s3 ls` to see available buckets.
-
 #### Your environment should now be properly setup. 
 
 ######-------------------------------------------------------------------------------
 
 ## Instructions:
 
-After completing environment setup
-
-To launch a Jupyter notebook, run
+After completing environment setup, launch the Jupyter notebook in a Terminal by running:
 
 `jupyter notebook`
 
