@@ -11,8 +11,6 @@ Files include:
 
 -`demo.ipynb`: tutorial Jupyter notebook
 
--`catalog.json`: copy JSON of the SBG-SHIFT STAC Catalog
-
 ## Download Repo
 
 To download the repo, open Terminal and make sure you are in the desired working directory, then run:
