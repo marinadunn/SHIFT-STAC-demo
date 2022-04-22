@@ -7,44 +7,19 @@ Files include:
 
 -`requirements.txt`: the complete list of required packages for Python venv creation
 
--`environment.yml`: setup file for conda env creation containing the complete list of required packages
-
 -`demo.ipynb`: tutorial Jupyter notebook
 
-## Download Repo
+## Instructions
 
-To download the repo, open Terminal and make sure you are in the desired working directory, then run:
+The demo files are available on s3://dh-shift-curated/demo
+
+You can also download this repo by opening Terminal and making sure you are in the desired working directory, then running:
 
 `git clone https://github.com/marinadunn/SHIFT-STAC-demo`
 
 ## Setup environment:
 
-#### Conda: 
-To setup using conda, you can create a virtual conda environment from a file with a list of dependencies needed to run these tutorials. One has already been provided for convenience called `environment.yml` with the environment name 'shift-env’ and specified both conda + pip requirements. You can change this to your liking if desired. 
-
-To create a conda environment from this file locally, in your Terminal run:
-
-`conda env create --file environment.yml`
-
-To activate the environment, run:
-
-`conda activate shift-env`
-
-If you need to update the environment (i.e. if a new version of a dependency is released), simply update the contents of your `environment.yml` file, then run:
-
-`conda env update --prefix ./env --file environment.yml  --prune`
-
-To use this environment as a kernel inside Jupyter, you can also manually add it by running:
-
-`python -m ipykernel install --user --name <env_name> --display-name "Python (<env_name>)"`
-
-For more info on using with Jupyter, [see here](https://medium.com/@sachinjose31/install-tensorflow-gpu-and-use-it-using-kernel-in-jupyter-6d82c8c5e468).
-More info about managing conda environments can be found at https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
-
-#### Python virtual environment: 
-If conda is not available or you prefer to use 'pip', you can create a virtual environment using Python. Make sure Python 3 is first installed.
-
-To create an environment, in the Terminal run:
+You can create a Python virtual environment on SHIFT-SMCE by running:
 
 `python3 -m venv shift-env`
 
@@ -62,15 +37,7 @@ If you need to install any additional packages, you can use
 
 `python3 -m pip install <package>`
 
-#### Your environment should now be properly setup. 
-
------------------------------------------------------------------------------------------------------------
-
-## Instructions:
-
-After completing environment setup, launch the Jupyter notebook in a Terminal by running:
-
-`jupyter notebook`
+#### Your environment should now be properly setup.
 
 -----------------------------------------------------------------------------------------------------------
 
