@@ -1,5 +1,5 @@
 # SHIFT-STAC-demo
-Repo for public use for science discovery using data from the Surface Biology and Geology (SBG) SHIFT AVIRIS-NG campaign. Examples are provided in mainly Python, with some R examples.
+Repo for public use for science discovery using data from the Surface Biology and Geology (SBG) SHIFT AVIRIS-NG campaign. Examples are provided in Python.
 
 [More info about AVIRIS-NG data products](https://avirisng.jpl.nasa.gov/dataportal/)
 
