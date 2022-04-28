@@ -11,15 +11,13 @@ Files include:
 
 ## Instructions
 
-The demo files are available on s3://dh-shift-curated/demo
+If running the demo on SHIFT-SMCE, the files are already available on s3://dh-shift-curated/demo/, and the required packages have already been installed in the environment.
 
-You can also download this repo by opening Terminal and making sure you are in the desired working directory, then running:
+If you prefer to work on the demo locally, you can also download this repo by running:
 
 `git clone https://github.com/marinadunn/SHIFT-STAC-demo`
 
-## Setup environment:
-
-You can create a Python virtual environment on SHIFT-SMCE by running:
+You can then create a Python virtual environment by running:
 
 `python3 -m venv shift-env`
 
@@ -29,15 +27,13 @@ To activate the environment, run:
 
 You can confirm this is active by running `$ which python`, which should `.../shift-env/bin/python`
 
-Now you can install packages. A file with a list of dependencies needed to run these tutorials has been provided for convenience called `requirements.txt`. To install these, run:
+A file with a list of dependencies needed to run the demo has been provided called `requirements.txt`. To install these, run:
 
 `python3 -m pip install -r requirements.txt`
 
 If you need to install any additional packages, you can use 
 
 `python3 -m pip install <package>`
-
-#### Your environment should now be properly setup.
 
 -----------------------------------------------------------------------------------------------------------
 
