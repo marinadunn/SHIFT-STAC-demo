@@ -7,11 +7,11 @@ Files include:
 
 -`requirements.txt`: the complete list of required packages for Python venv creation
 
--`demo.ipynb`: tutorial Jupyter notebook
+-`data_visualization_demo.ipynb`: demo Jupyter notebook of visualization and analysis for example dataset
 
 ## Instructions
 
-If running the demo on SHIFT-SMCE, the files are already available on s3://dh-shift-curated/demo/, and the required packages have already been installed in the environment.
+If running this demo on the SHIFT-SMCE, files are already available in the AWS S3 bucket `dh-shift-curated` under `/demo/`, and the required packages have already been installed in the environment.
 
 If you prefer to work on the demo locally, you can also download this repo by running:
 
@@ -54,7 +54,7 @@ SBG-SHIFT STAC Catalog
 │   │
 │   └─── <flight line> (Item)
 ```
-where the STAC item is a dataset for one flight line of date form `YYYYMMDD` (see below). For each of these items, the dataset is an asset of form `angYYYYMMDDtHHNNSS.zarr`, as well as assets for jpegs of RGB True Color, RGB enhanced, and R, G, and B bands plotted separately. Note that the RGB composite images are not yet georeferenced, while bands plotted separately are.
+where each STAC item is a flight line of format `angYYYYMMDDtHHNNSS`, and its asset is the Zarr dataset of format `angYYYYMMDDtHHNNSS.zarr`.
 
 ```  
 YYYY:  The year of the airborne flight run.
