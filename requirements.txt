@@ -43,3 +43,4 @@ shapely
 'stackstac[viz]'
 xarray[complete]
 zarr>=2.4.0
+opencv-python
