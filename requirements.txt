@@ -40,3 +40,4 @@ sat-stac
 shapely
 xarray[complete]
 zarr>=2.4.0
+opencv-python
